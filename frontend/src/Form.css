@@ -1,0 +1,45 @@
+.Form-container {
+  display: flex;
+  width: 90%;
+  height: 3rem;
+  margin: 1.5rem auto 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Form-container input {
+  width: 80%;
+  border: none;
+  background: rgb(240, 230, 230);
+  padding: 0.5rem;
+  font-size: initial;
+  display: flex;
+  flex-wrap: wrap;
+  outline: none;
+  border-radius: 5px;
+  height: 1rem;
+}
+
+.Form-container button {
+  cursor: pointer;
+  background: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  box-shadow: 0 5px 20px rgba(100, 100, 100, 0.3),
+    0 10px 8px rgba(100, 100, 100, 0.1);
+}
+
+.Form-container button:hover {
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+.Form-container button:disabled {
+  opacity: 0.2;
+  box-shadow: none;
+  cursor: default;
+}

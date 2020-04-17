@@ -1,0 +1,33 @@
+.TaskList {
+  display: flexbox;
+  width: 40vw;
+  min-width: 500px;
+  padding: 10px 0;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 38px rgba(100, 100, 100, 0.3),
+    0 15px 12px rgba(100, 100, 100, 0.1);
+}
+
+.TaskList-title {
+  text-align: center;
+}
+
+.Spinner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

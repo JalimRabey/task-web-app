@@ -1,0 +1,46 @@
+.Task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1px groove rgba(114, 114, 114, 0.219);
+  overflow: hidden;
+  position: relative;
+  transition: 0.25s ease-in-out;
+}
+
+.Task:hover {
+  background: rgba(94, 91, 91, 0.432);
+}
+
+.Task p {
+  margin-left: 1rem;
+}
+
+.Task-buttons {
+  flex-shrink: 0;
+  margin: 0 1rem;
+  width: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Task-buttons button {
+  font-size: 1em;
+  background: none;
+  color: white;
+  -webkit-appearance: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.Task-buttons i:hover {
+  opacity: 0.5;
+}
+
+.Task-completed {
+  text-decoration: line-through;
+}
+.Task-buttons button .fa-trash:hover {
+  color: rgb(219, 38, 38);
+}
